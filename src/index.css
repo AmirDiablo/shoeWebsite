@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.nav::-webkit-scrollbar{
+  display: none
+}
+
+.dots p{
+  width: 13px;
+  height: 4px;
+  border-radius: 7px;
+  margin: 3px
+}
+
+.scroll .blocks{
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.blocks{
+  transform: scale(0);
+  opacity: 0;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.blocks:nth-child(odd){
+  align-self:flex-end;
+}
+
+
+.shoe{
+  transition: transform 1s ease, opacity 1s ease
+}
+
+.slider img{
+  width: 30%;
+  border-radius: 10px;
+  height: 300px;
+  transition: width 0.8s ease;
+}
+.slider img:nth-child(1){
+  width: 160px
+}
+
+/* .slider img:hover{
+  width: 160px;
+} */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+.arrow, .arrow2, .arrow3{
+  transition: transform 0.5s ease
+}
+
+
+@layer theme, base, components, utilities;
+@theme {
+  --aspect-retro: 4 / 3; 
+  --container-4xs: 14rem; 
+  --font-dancingScript: "Dancing Script", sans-serif;
+  
+}
+
+@import 'tailwindcss'
