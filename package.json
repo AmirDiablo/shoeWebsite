@@ -1,12 +1,9 @@
 {
-  "homepage": "https://AmirDiablo.github.io/AmirDiablo.github.io/",
   "name": "tailact",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
