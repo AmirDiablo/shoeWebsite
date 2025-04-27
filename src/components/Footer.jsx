@@ -9,15 +9,9 @@ import { SiNike } from "react-icons/si";
 
 const Footer = () => {
 
+    /* bg-linear-to-t from-black from-40% to-white/1 */
     return ( 
-        <div className="bg-linear-to-t from-black from-40% to-white/1 mt-20 py-25 cursor-pointer">
-            <h2 className="text-4xl font-bold p-4 flex gap-3 items-center">Nike <SiNike className="text-7xl" /></h2>
-            <div className="p-4 text-4xl flex gap-4">
-                <FaInstagram className="hover:text-pink-600" />
-                <FiTwitter className="hover:text-blue-500"/>
-                <FiFacebook className="hover:text-blue-600"/>
-                <LiaTelegramPlane className="hover:text-blue-500"/>
-            </div>
+        <div className="bg-gray-950 mt-20 py-20 cursor-pointer">
             <div className=" mt-10">
                 <details className="text-white detail1" onClick={()=> {
                     const check = document.querySelector(".detail1").hasAttribute("open")
