@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom"
 import Example1 from "./components/Example1"
 import Nav from "./components/Nav"
 import Home from "./pages/Home"
@@ -29,7 +29,7 @@ function App() {
     }, [])
 
   return ( 
-    <BrowserRouter>
+    <HashRouter>
       <Nav />
       <div className="mt-25 md:mt-8 lg:-mt-7">
         <Routes>
@@ -43,7 +43,7 @@ function App() {
         </Routes>
       </div>
       {isLarge ? <Footer2 /> : <Footer />}
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

@@ -41,7 +41,7 @@ const Landing3 = () => {
             </div>
             <div className="flex flex-col items-center gap-3">
                 <div ref={myRef} className="bg-gray-700/10 rounded-full aspect-square flex flex-col justify-center items-center md:scale-70 shoe">
-                    <img src={shoes[number].file} className="-rotate-25 scale-120 w-[45vw]" />
+                    <img src={"../../public/"+shoes[number].file} className="-rotate-25 scale-120 w-[45vw]" />
                 </div>
                 <div className="flex w-max dots lg:-mt-17">
                     <p className={number == "0" ? "bg-black" : "bg-gray-700/15"}></p>
