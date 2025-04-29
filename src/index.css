@@ -74,6 +74,46 @@ details > summary::-webkit-details-marker {
   outline: 1px black solid
 }
 
+.fadingText {
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.floatingShoes{
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes spinAround {
+  0%{ box-shadow: -10px -10px 20px red, 60px 10px 30px rgba(255, 255, 255, 0); }
+  25%{ box-shadow: 20px -10px 20px red, -60px 10px 30px rgba(255, 255, 255, 0);}
+  50%{ box-shadow: 20px 10px 30px red, -60px -10px 30px rgba(255, 255, 255, 0); }
+  75%{ box-shadow: -20px 10px 30px red, 60px 10px 30px rgba(255, 255, 255, 0); }
+  100%{ box-shadow: -20px -10px 30px red, 60px 10px 30px rgba(255, 255, 255, 0);}
+}
+.raisingImg{
+  box-shadow: 0px 20px 30px red;
+}
+.shining{
+  box-shadow: 5px 5px 100px red;
+}
+.appearing{
+  transition: all 1s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.appearingText{
+  transition: all 1s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes floating {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-5px);}
+  100% {transform: translateY(0px);}
+}
+
 
 @layer theme, base, components, utilities;
 
@@ -93,7 +133,7 @@ details > summary::-webkit-details-marker {
   --aspect-retro: 4 / 3; 
   --container-4xs: 14rem; 
   --font-dancingScript: "Dancing Script", sans-serif;
-  
+
 }
 
 @import 'tailwindcss'

@@ -10,6 +10,7 @@ import Products from "./pages/Products"
 import ShowProduct from "./pages/showProduct"
 import Bag from "./pages/Bag"
 import Favourite from "./pages/Favourite"
+import Features from "./pages/Features"
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="showProduct" Component={ShowProduct}/>
           <Route path="bag" Component={Bag}/>
           <Route path="favourite" Component={Favourite}/>
+          <Route path="features" Component={Features}/>
         </Routes>
       </div>
       {isLarge ? <Footer2 /> : <Footer />}

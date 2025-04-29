@@ -57,7 +57,7 @@ const Nav = () => {
     return ( 
         <div>
             {open ? <div><Search close={close} /></div> : 
-                <div className="flex items-center fixed top-0 left-0 w-screen bg-white/30 backdrop-blur-[20px] z-1 md:px-20">
+                <div className="flex items-center fixed top-0 left-0 w-screen bg-white backdrop-blur-[20px] z-1 md:px-20">
                 <p className="text-[30px] font-bold italic p-5">Nike</p>
                 <ul className=" font-bold flex gap-5 p-5 overflow-auto nav w-screen justify-end-safe md:gap-15">
                     <li><Link to="/">Home</Link></li>
