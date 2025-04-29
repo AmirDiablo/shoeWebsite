@@ -29,7 +29,7 @@ function App() {
     }, [])
 
   return ( 
-    <HashRouter>
+    <BrowserRouter>
       <Nav />
       <div className="mt-25 md:mt-8 lg:-mt-7">
         <Routes>
@@ -43,7 +43,7 @@ function App() {
         </Routes>
       </div>
       {isLarge ? <Footer2 /> : <Footer />}
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
