@@ -6,11 +6,11 @@ import { BagProvider } from './contexts/BagContext.jsx'
 import { FavProvider } from './contexts/FavContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  
     <BagProvider>
     <FavProvider>
       <App />
     </FavProvider>
     </BagProvider>
-  </StrictMode>,
+  ,
 )

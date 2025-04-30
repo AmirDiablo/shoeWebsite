@@ -91,27 +91,32 @@ details > summary::-webkit-details-marker {
   75%{ box-shadow: -20px 10px 30px red, 60px 10px 30px rgba(255, 255, 255, 0); }
   100%{ box-shadow: -20px -10px 30px red, 60px 10px 30px rgba(255, 255, 255, 0);}
 }
-.raisingImg{
-  box-shadow: 0px 20px 30px red;
-}
-.shining{
-  box-shadow: 5px 5px 100px red;
-}
-.appearing{
+
+
+.fadings {
   transition: all 1s ease;
-  opacity: 0;
-  transform: translateY(20px);
-}
-.appearingText{
-  transition: all 1s ease;
-  opacity: 0;
-  transform: translateY(20px);
 }
 
-@keyframes floating {
-  0% {transform: translateY(0px);}
-  50% {transform: translateY(-5px);}
-  100% {transform: translateY(0px);}
+.appearing{
+  transition: all 1s ease;
+}
+
+.typing{
+  animation: type 10s 1s forwards;
+}
+
+.cursor{
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100%{ background-color: transparent; }
+  50% { background-color: white; }
+}
+
+@keyframes appearing {
+  from{ opacity: 0; transform: translateY(10px) }
+  to{ opacity: 1; transform: translateY(0px) }
 }
 
 
